@@ -25,6 +25,7 @@ public class MarshmallowMonster
 								int legCount, 
 								int noseCount,
 								boolean hasBellyButton)
+								
 	{						
 		this.name = name;
 		this.antennaCount = antennaCount;
@@ -32,6 +33,13 @@ public class MarshmallowMonster
 		this.legCount = legCount;
 		this.noseCount = noseCount;
 		this.hasBellyButton = hasBellyButton;
+	}
+	
+	public String toString()
+	{
+		String description = "Monster says: Name is " + name;
+		
+		return description;
 	}
 	
 	/*
