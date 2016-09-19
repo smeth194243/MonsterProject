@@ -15,11 +15,6 @@ public class MonsterController
 	{
 		System.out.println("We made monsters today!");
 		System.out.println("Here is mine: " + firstMonster);
-		System.out.println("My monster has this many legs: " + firstMonster.getLegCount());
-		System.out.println("My monster has this many antennas; " + firstMonster.getAntennaCount());
-		System.out.println("My monster has this many noses: "+ firstMonster.getNoseCount());
-		System.out.println("My monster has this many eyes: " + firstMonster.getEyeCount());
-		System.out.println("My monster has a belly button: " + firstMonster.getHasBellyButton());
 		
 		System.out.println("Do you want to change my name?");
 		String answer = keyboardInput.nextLine();
@@ -30,6 +25,34 @@ public class MonsterController
 			String newName = keyboardInput.nextLine();
 			firstMonster.setName(newName);
 		}
+		
+		System.out.println("My monster has this many legs: " + firstMonster.getLegCount());
+		
+		System.out.println("Do you want to change my number of legs?");
+		String answer = keyboardInput.nextLine();
+		
+		if (answer.equalsIgnoreCase("yes"))
+		{
+			System.out.println("What do you want the leg count to be?");
+			double newlegCount = keyboardInput.nextDouble();
+			firstMonster.setLegCount(newlegCount);
+		}
+		//: Well screw this shiz
+		System.out.println("My monster has this many antennas; " + firstMonster.getAntennaCount());
+		
+		System.out.println("Do you want to change the number of Antennas?");
+		String answer = keyboardInput.nextLine();
+		
+		if (answer.equalsIgnoreCase("yes"))
+		{
+			System.out.println("What do you want the Antenna Count to be?");
+			//:Needs to be completed from here out
+		}
+		System.out.println("My monster has this many noses: "+ firstMonster.getNoseCount());
+		System.out.println("My monster has this many eyes: " + firstMonster.getEyeCount());
+		System.out.println("My monster has a belly button: " + firstMonster.getHasBellyButton());
+		
+		
 		
 		System.out.println(firstMonster);
 	}
